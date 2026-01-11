@@ -34,8 +34,10 @@
         (Sans --global pour que ça s'applique uniquement à ce projet)
 
   5/ **Créer une Repository ==> Aller dans Github et créér manuellement une repository vide**
+  
   6/ **Connecter le projet local au dépôt distant créé précédemment**
          git remote add origin <url-de-votre-dépôt> 
+
          => url exemple : https://github.com/ton-username/ton-projet.git (le nom de la repo créée)
 
   7/ **Pour envoyer le projet vers le dépôt distant**
@@ -48,7 +50,7 @@
          origin  https://github.com/ton-username/mon-projet.git (push)
 
 
-# Exemple : Pour ce projet j'ai fait ça : (mais j'ai déjà configuré su SSH Keys pour tous mes comptes GitHub pour s'auto pointer sur le bon compte pour chaque projet sans avoir à gérer le cache)
+# Exemple : Pour ce projet j'ai fait ça : (mais j'ai déjà configuré des SSH Keys pour tous mes comptes GitHub pour s'auto pointer sur le bon compte pour chaque projet sans avoir à gérer le cache à chaque switch de compte)
     git init
     git add .
     git config user.name "le username de mon github de la formation"
@@ -57,3 +59,4 @@
     git branch -M main
     git remote add origin https://github.com/nbouzidi-stack/projet-react-01.git
     git push -u origin main
+    Et pour les prochains push ce sera juste "git push"
